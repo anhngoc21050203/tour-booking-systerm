@@ -1,0 +1,21 @@
+<div class="user-page">
+  <h1>Trang người dùng</h1>
+  <div class="user-content">
+    <div class="card-container">
+      @for (card of userCards; track card.title) {
+      <mat-card class="info-card">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>{{card.icon}}</mat-icon>
+          <mat-card-title>{{card.title}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{card.content}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button color="primary">XEM</button>
+        </mat-card-actions>
+      </mat-card>
+      }
+    </div>
+  </div>
+</div>
